@@ -1,0 +1,19 @@
+Exercice 2
+Un temps de réflexion s'impose : la structure de la base de données vous impose de remplir les tables dans un ordre défini, afin de 
+respecter les contraintes de clés étrangères : Quel est l'ordre à adopter ? Argumenter.
+
+/******************************************************************************************************************************************/
+Réponse
+
+Il convient de remplir les tables dans cette ordre : 
+1 - posts
+2 - employees
+3 - categories
+4 - countries
+5 - customers
+6 - orders
+7 - orders_details
+8 - suppliers
+9 - products
+
+Pour éviter les erreurs d'execution des scripts SQL, il faut remplir en premier lieu les tables qui n'ont pas des contraintes de FOREIGN KEY > Et remplir en dernier la table qui a le plus de FOREIGN KEY
